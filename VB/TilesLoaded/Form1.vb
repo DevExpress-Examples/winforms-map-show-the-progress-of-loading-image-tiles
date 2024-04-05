@@ -1,13 +1,15 @@
-﻿Imports DevExpress.XtraMap
+Imports DevExpress.XtraMap
 Imports System
 Imports System.Windows.Forms
 
 Namespace TilesLoaded
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits Form
 
         Private requestsCounter As Integer = 0
-        Private ReadOnly Property Layer() As ImageLayer
+
+        Private ReadOnly Property Layer As ImageLayer
             Get
                 Return CType(mapControl1.Layers(0), ImageLayer)
             End Get
@@ -32,12 +34,8 @@ Namespace TilesLoaded
         End Sub
 
         Private Sub UpdateProgressBar()
-            If Not progressBar1.Visible Then
-                progressBar1.Visible = True
-            End If
-            If Not label1.Visible Then
-                label1.Visible = True
-            End If
+            If Not progressBar1.Visible Then progressBar1.Visible = True
+            If Not label1.Visible Then label1.Visible = True
             progressBar1.Value = CInt(100 * (requestsCounter - 1) \ requestsCounter)
         End Sub
     End Class

@@ -1,5 +1,7 @@
-﻿Namespace TilesLoaded
-    Partial Public Class Form1
+Namespace TilesLoaded
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,25 +12,25 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Dim imageTilesLayer1 As New DevExpress.XtraMap.ImageLayer()
-            Dim openStreetMapDataProvider1 As New DevExpress.XtraMap.OpenStreetMapDataProvider()
+            Dim imageTilesLayer1 As DevExpress.XtraMap.ImageLayer = New DevExpress.XtraMap.ImageLayer()
+            Dim openStreetMapDataProvider1 As DevExpress.XtraMap.OpenStreetMapDataProvider = New DevExpress.XtraMap.OpenStreetMapDataProvider()
             Me.mapControl1 = New DevExpress.XtraMap.MapControl()
             Me.progressBar1 = New System.Windows.Forms.ProgressBar()
             Me.label1 = New System.Windows.Forms.Label()
-            DirectCast(Me.mapControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.mapControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' mapControl1
@@ -71,17 +73,16 @@
             Me.Controls.Add(Me.mapControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.mapControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.mapControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private mapControl1 As DevExpress.XtraMap.MapControl
+
         Private progressBar1 As System.Windows.Forms.ProgressBar
+
         Private label1 As System.Windows.Forms.Label
     End Class
 End Namespace
-
