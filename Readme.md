@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Map for WinFors - How to Show the Progress of Loading Image Tiles
+# Map for WinForms - How to Show the Progress of Loading Image Tiles
 
 This example shows how to visualize the progress of loading image tiles with a progress bar.
 To accomplish this task, handle the [ImageTilesLayer.RequestDataLoading](https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapImageTilesLayer_RequestDataLoadingtopic) event and specify how the progress bar should be updated with the `UpdateProgressBar` method. Then, handle the [LayerBase.DataLoaded](https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapLayerBase_DataLoadedtopic) event to specify the final state of the progress bar when the data load is finished.
