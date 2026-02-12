@@ -17,7 +17,7 @@ To accomplish this task, handle the [ImageTilesLayer.RequestDataLoading](https:/
 [Map Image Data](https://docs.devexpress.com/WindowsForms/17853/controls-and-libraries/map-control/examples/map-image-data)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-show-the-progress-of-loading-image-tiles&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-show-the-progress-of-loading-image-tiles&~~~was_helpful=no)
 
